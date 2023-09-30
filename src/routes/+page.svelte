@@ -36,16 +36,70 @@
       description: 'タブを切り替えて戻ると、復帰時の同期処理が起こり、プレイ体験が悪化する。特に大会中にDiscordを開いたり、WEBサイトのマップを確認した後に同期が発生し、操作性が悪い。',
     },
     {
-      title: 'Is it unstyled?',
+      title: '【ドクロの悪戯】後戻り',
       description:
-        "Yes. It's unstyled by default, giving you freedom over the look and feel.",
+        "後戻りで他のプレイヤーに擦り付けた場合、座標が狂う。",
     },
     {
-      title: 'Can it be animated?',
+      title: '勝手にオートになる',
       description:
-        'Yes! You can use the transition prop to configure the animation.',
+        'オートモードに移行していないのに、勝手に操作される。',
+    },
+    {
+      title: '【クイーンの悪戯】破産',
+      description:
+        '借金になっても、物件が売られない事がある。',
+    },
+    {
+      title: '各プレイヤー毎イベントの表示タイミング',
+      description:
+        '各プレイヤー毎に発生するイベント（都市独占でアイテムが貰えるイベントや、お金が増えるイベント）の表示するタイミングを「あなたのターンです」の後にして欲しい。',
+    },
+    {
+      title: 'アイテムを使ったらキャンセルできない',
+      description:
+        'stealer, take over',
+    },
+    {
+      title: '周遊アイテムが壊れた時に鳴るタイミング',
+      description:
+        'アイテムを壊すタイミングが違います。使ったときにアイテムが壊れるのではなく、マスに着いた時に壊れる。',
+    },
+    {
+      title: 'スゴミの大きさが統一されていない',
+      description:
+        '順番ルーレットと決算で大きさが違う',
+    },
+    {
+      title: '経路選択',
+      description:
+        'ドクロが憑かない経路があるのに選択されない。',
+    },
+    {
+      title: '会員登録',
+      description:
+        'メール認証をスマホで行うと、PC側はリロードするかリンクを踏まなくてはいけない。',
+    },
+    {
+      title: 'JS dialog',
+      description:
+        'JS dialogを表示していると、待ち時間が長くなる事がある。',
+    },
+    {
+      title: '全体マップ',
+      description:
+        '車やヘリポートが点滅するので判別しにくい。',
+    },
+    {
+      title: '冬の福の神',
+      description:
+        'イベント発生のタイミングがマイナスマスのメッセージ前に起きるので、わかりにくい。',
     },
   ];
+
+
+
+
 
 
 
@@ -76,15 +130,13 @@
 
 
 
-
-
 <div class="bg-white py-6 sm:py-8 lg:py-12">
   <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
       <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">既知のバグ(2023/10/01)</h2>
 
-      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">要望やバグの報告をお願いします。報告者にはリワードを配ります。</p>
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">要望やバグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！</p>
     </div>
     <!-- text - end -->
 
@@ -109,12 +161,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
 
 
 

@@ -7,7 +7,7 @@ import "../app.css";
     <div class="container mx-auto">
         <div class="flex justify-between">
             <div>
-                <a href="#" class="text-xl font-bold">Dice or Dead</a>
+                <a href="#" class="text-xl font-bold">Dice or Dead βtest</a>
             </div>
             <div>
                 <a href="#features" class="mr-4">Features</a>
@@ -20,32 +20,42 @@ import "../app.css";
 <!-- Hero Section -->
 <section class="bg-amber-600 text-white text-center py-20">
     <div class="container mx-auto">
-        <h1 class="text-4xl mb-6"></h1>
+        <h1 class="text-4xl mb-6">アイテムのアイデアやバグを投稿しよう！</h1>
         <div class="flex justify-center ...">
             <div><img src="octfest-logo.webp"></div>
         </div>
+        <div class="flex justify-center ...">
+            <div><img src="reward20k.webp"></div>
+        </div>
+        <div class="flex justify-center ...">
+            <div><img src="invitebonus.webp"></div>
+        </div>
           
-        <p class="mb-6">Some catchy tagline or introduction here.</p>
-        <a href="#cta" class="bg-red-600 text-white py-2 px-6 rounded">Get Started</a>
+        <p class="mb-6">2023/10/01 12:00(UTC) ～ before PreSale</p>
+        <a href="#cta" class="bg-red-600 text-white py-2 px-6 rounded">Play Free Game</a>
     </div>
 </section>
 
 <!-- Features Section -->
 <section id="features" class="py-20">
+    <p class="flex justify-center text-xl mb-5">今回のβテストではウォレット作成の手順が省かれています。</p>
     <div class="container mx-auto grid md:grid-cols-3 gap-12">
-        <div>
-            <h2 class="text-xl mb-4">Feature 1</h2>
-            <p>Description about this feature.</p>
+        <div class="bg-blue-600 rounded pt-2">
+            <h2 class="text-xl mb-4 flex justify-center text-white">Step 1</h2>
+            <p class="mb-4 flex justify-center text-white">会員登録する</p>
+            <p class="mb-4 flex justify-center text-white"><a href="https://beta-diceordead.six502.com/" target="game">https://beta-diceordead.six502.com/</a></p>
         </div>
-        <div>
-            <h2 class="text-xl mb-4">Feature 2</h2>
-            <p>Description about this feature.</p>
+        <div class="bg-blue-600 rounded pt-2">
+            <h2 class="text-xl mb-4 flex justify-center text-white">Step 2</h2>
+            <p class="mb-4 flex justify-center text-white">メールとSMSを認証する</p>
         </div>
-        <div>
-            <h2 class="text-xl mb-4">Feature 3</h2>
-            <p>Description about this feature.</p>
+        <div class="bg-blue-600 rounded pt-2">
+            <h2 class="text-xl mb-4 flex justify-center text-white">Step 3</h2>
+            <p class="mb-4 flex justify-center text-white">マルチプレイでゲームに参加！</p>
         </div>
     </div>
+    <p class="flex justify-center text-xl mt-5">詳しい手順はこちら</p>
+    <p class="flex justify-center text-xl"><a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6" target="medium">https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6</a></p>
 </section>
 
 <slot />
