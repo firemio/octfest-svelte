@@ -3,11 +3,11 @@ import "../app.css";
 </script>
 
 <!-- Header -->
-<nav class="bg-blue-600 p-4 text-white">
+<nav class="bg-amber-900 p-4 text-white">
     <div class="container mx-auto">
         <div class="flex justify-between">
             <div>
-                <a href="#" class="text-xl font-bold">YourBrand</a>
+                <a href="#" class="text-xl font-bold">Dice or Dead</a>
             </div>
             <div>
                 <a href="#features" class="mr-4">Features</a>
@@ -18,9 +18,13 @@ import "../app.css";
 </nav>
 
 <!-- Hero Section -->
-<section class="bg-blue-500 text-white text-center py-20">
+<section class="bg-amber-600 text-white text-center py-20">
     <div class="container mx-auto">
-        <h1 class="text-4xl mb-6">Welcome to Our Landing Page</h1>
+        <h1 class="text-4xl mb-6"></h1>
+        <div class="flex justify-center ...">
+            <div><img src="octfest-logo.webp"></div>
+        </div>
+          
         <p class="mb-6">Some catchy tagline or introduction here.</p>
         <a href="#cta" class="bg-red-600 text-white py-2 px-6 rounded">Get Started</a>
     </div>
@@ -59,9 +63,9 @@ import "../app.css";
 </section>
 
 <!-- Footer -->
-<footer class="bg-blue-600 text-white p-4">
+<footer class="bg-amber-900 text-white p-4">
     <div class="container mx-auto text-center">
-        <p>&copy; 2023 YourBrand</p>
+        <p>&copy; 2023 six502.com</p>
     </div>
 </footer>
 
