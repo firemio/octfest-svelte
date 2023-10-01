@@ -1,0 +1,37 @@
+export default {
+  English: {
+    "homepage.catchcopy": "Let's work together to make the game more fun!！",
+    "homepage.btn1": "Play Free Game",
+    "homepage.welcome": "Hi <strong>{{name}}</strong>, how are you?",
+    "homepage.time": "The current time is: {{time}}",
+    "sect1.msg1": "How to play",
+    "sect1.msg2": "The wallet creation procedure has been omitted from this beta test.",
+    "sect1.msg3": "Click here for detailed",
+    "sect1.box1": "Sign up for membership",
+    "sect1.box2": "Authenticate email and SMS",
+    "sect1.box3": "Join the game in MULTIPLAY!",
+    "reward.title": "Rewards",
+    "reward.msg1": "Please submit requests, item ideas, and bug reports. Reward rewards will be given to those who are selected!",
+  },
+  Japanese: {
+    "homepage.catchcopy": "みんなで協力してゲームを面白くしよう！",
+    "homepage.btn1": "無料で遊ぶ",
+    "homepage.welcome": "Hola, <strong>{{name}}</strong>, ¿cómo estás?",
+    "homepage.time": "La hora actual es: {{time}}",
+    "sect1.msg1": "参加方法",
+    "sect1.msg2": "今回のβテストではウォレット作成の手順が省かれています。",
+    "sect1.msg3": "詳しい手順はこちら",
+    "sect1.box1": "会員登録する",
+    "sect1.box2": "メールとSMSを認証する",
+    "sect1.box3": "マルチプレイでゲームに参加！",
+    "reward.title": "リワード",
+    "reward.msg1": "要望やアイテムのアイデア、バグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！",
+    
+  },
+  // Chinese: {
+  //   "homepage.catchcopy": "みんなで協力してゲームを面白くしよう！",
+  //   "homepage.title": "¡Hola Mundo!",
+  //   "homepage.welcome": "Hola, <strong>{{name}}</strong>, ¿cómo estás?",
+  //   "homepage.time": "La hora actual es: {{time}}",
+  // },
+};

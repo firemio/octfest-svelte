@@ -1,5 +1,15 @@
-<script>
+<script lang="ts">
 import "../app.css";
+
+import { t, locale, locales } from "../i18n";
+	// Create a locale specific timestamp
+  $: time = new Date().toLocaleDateString($locale, {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
 </script>
 
 <!-- Header -->
@@ -10,16 +20,23 @@ import "../app.css";
                 <a href="#" class="text-xl font-bold">Dice or Dead βtest</a>
             </div>
             <div>
+                <span class="text-black">
+                    <select bind:value={$locale}>
+                      {#each locales as l}
+                        <option value={l}>{l}</option>
+                      {/each}
+                    </select>
+                </span>
                 <a href="https://dod-event-openbeta.six502.com/celebration.html" class="mr-4">Old Event Page</a>
+                
             </div>
         </div>
     </div>
 </nav>
-
 <!-- Hero Section -->
 <section class="bg-amber-600 text-white text-center py-20">
     <div class="container mx-auto">
-        <h1 class="text-4xl mb-6">みんなで協力してゲームを面白くしよう！</h1>
+        <h1 class="text-4xl mb-6">{@html $t("homepage.catchcopy")}</h1>
         <div class="flex justify-center ...">
             <div><img src="octfest-logo.webp"></div>
         </div>
@@ -31,7 +48,7 @@ import "../app.css";
         </div>
           
         <p class="mb-6">2023/10/01 12:00(UTC) ～ before PreSale</p>
-        <a href="https://beta-diceordead.six502.com/" target="game_dod" class="bg-red-600 text-white py-2 px-6 rounded">Play Free Game</a>
+        <a href="https://beta-diceordead.six502.com/" target="game_dod" class="bg-red-600 text-white py-2 px-6 rounded">{@html $t("homepage.btn1")}</a>
     </div>
 </section>
 

@@ -2,13 +2,22 @@
   import { createAccordion, melt } from '@melt-ui/svelte';
   import { slide } from 'svelte/transition';
  
+  import { t, locale, locales } from "../i18n";
+	// Create a locale specific timestamp
+  $: time = new Date().toLocaleDateString($locale, {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   const {
     elements: { root, content, item, trigger },
     helpers: { isSelected },
   } = createAccordion({
     multiple: true,
   });
- 
+
   const items = [
     {
       id: 'item-1',
@@ -34,6 +43,32 @@
         '上場時にエアドロップされます。',
     },
   ];
+  const items_ja = [
+    {
+      id: 'item-1',
+      title: 'asdasd',
+      description: 'ertert',
+    },
+    {
+      id: 'item-2',
+      title: 'リワードはいつ貰えますか？',
+      description:
+        '上場した後に配布されます。',
+    },
+    {
+      id: 'item-3',
+      title: '紹介者ボーナスとは？',
+      description:
+        "ゲーム内のプロフィールページに紹介リンクがあります。紹介リンクから入ったユーザーの数に応じてトークンが貰えます。",
+    },
+    {
+      id: 'item-4',
+      title: '紹介者ボーナスはいつ貰えますか？',
+      description:
+        '上場時にエアドロップされます。',
+    },
+  ];
+
 
 
   const bugs = [
@@ -108,24 +143,25 @@
 
 <!-- Features Section -->
 <section id="features" class="py-20">
-  <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">参加方法</h2>
-  <p class="flex justify-center text-xl mb-5">今回のβテストではウォレット作成の手順が省かれています。</p>
+  <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">{@html $t("sect1.msg1")}</h2>
+  
+  <p class="flex justify-center text-xl mb-5">{@html $t("sect1.msg2")}</p>
   <div class="container mx-auto grid md:grid-cols-3 gap-12">
       <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 1</h2>
-          <p class="mb-4 flex justify-center text-white">会員登録する</p>
+          <p class="mb-4 flex justify-center text-white">{@html $t("sect1.box1")}</p>
           <p class="mb-4 flex justify-center text-white"><a href="https://beta-diceordead.six502.com/" target="game">https://beta-diceordead.six502.com/</a></p>
       </div>
       <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 2</h2>
-          <p class="mb-4 flex justify-center text-white">メールとSMSを認証する</p>
+          <p class="mb-4 flex justify-center text-white">{@html $t("sect1.box2")}</p>
       </div>
       <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 3</h2>
-          <p class="mb-4 flex justify-center text-white">マルチプレイでゲームに参加！</p>
+          <p class="mb-4 flex justify-center text-white">{@html $t("sect1.box3")}</p>
       </div>
   </div>
-  <p class="flex justify-center text-xl mt-5">詳しい手順はこちら</p>
+  <p class="flex justify-center text-xl mt-5">{@html $t("sect1.msg3")}</p>
   <p class="flex justify-center text-xl"><a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6" target="medium">https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6</a></p>
 </section>
 
@@ -134,9 +170,8 @@
 
 <!-- Reward Section -->
 <section id="features" class="py-20 flex flex-col items-center">
-    <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">リワード</h2>    
-    <p class="flex justify-center text-xl mb-5">要望やアイテムのアイデア、バグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！</p>
-
+    <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">{@html $t("reward.title")}</h2>    
+    <p class="flex justify-center text-xl mb-5">{@html $t("reward.msg1")}</p>
 <!--    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read more</a>  -->
     
     <a href="https://forms.gle/v4pftv5pUiwYjxwp7" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-green-100 rounded-lg bg-green-50 hover:text-white-900 hover:bg-green-100 dark:text-white-400 dark:bg-green-800 dark:hover:bg-green-700 dark:hover:text-white">
@@ -149,6 +184,7 @@
   
   
   <div class="root" use:melt={$root}>
+
     {#each items as { id, title, description }}
       <div use:melt={$item(id)} class="item">
         <h2>
