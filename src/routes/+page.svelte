@@ -97,35 +97,54 @@
     },
   ];
 
-
-
-
-
-
-
 </script>
 
-<div class="root" use:melt={$root}>
-  {#each items as { id, title, description }}
-    <div use:melt={$item(id)} class="item">
-      <h2>
-        <button use:melt={$trigger(id)} class="trigger">
-          {title}
-        </button>
-      </h2>
-      {#if $isSelected(id)}
-        <div class="content" use:melt={$content(id)} transition:slide>
-          <div>{description}</div>
-        </div>
-      {/if}
-    </div>
-  {/each}
-</div>
+
+<!-- Features Section -->
+<section id="features" class="py-20">
+  <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">参加方法</h2>
+  <p class="flex justify-center text-xl mb-5">今回のβテストではウォレット作成の手順が省かれています。</p>
+  <div class="container mx-auto grid md:grid-cols-3 gap-12">
+      <div class="bg-blue-600 rounded pt-2">
+          <h2 class="text-xl mb-4 flex justify-center text-white">Step 1</h2>
+          <p class="mb-4 flex justify-center text-white">会員登録する</p>
+          <p class="mb-4 flex justify-center text-white"><a href="https://beta-diceordead.six502.com/" target="game">https://beta-diceordead.six502.com/</a></p>
+      </div>
+      <div class="bg-blue-600 rounded pt-2">
+          <h2 class="text-xl mb-4 flex justify-center text-white">Step 2</h2>
+          <p class="mb-4 flex justify-center text-white">メールとSMSを認証する</p>
+      </div>
+      <div class="bg-blue-600 rounded pt-2">
+          <h2 class="text-xl mb-4 flex justify-center text-white">Step 3</h2>
+          <p class="mb-4 flex justify-center text-white">マルチプレイでゲームに参加！</p>
+      </div>
+  </div>
+  <p class="flex justify-center text-xl mt-5">詳しい手順はこちら</p>
+  <p class="flex justify-center text-xl"><a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6" target="medium">https://six502.medium.com/how-to-participate-in-the-opne-beta-77caef8b82f6</a></p>
+</section>
 
 
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
-
-
+<!-- Features Section -->
+<section id="features" class="py-20">
+  <div class="root" use:melt={$root}>
+    {#each items as { id, title, description }}
+      <div use:melt={$item(id)} class="item">
+        <h2>
+          <button use:melt={$trigger(id)} class="trigger">
+            {title}
+          </button>
+        </h2>
+        {#if $isSelected(id)}
+          <div class="content" use:melt={$content(id)} transition:slide>
+            <div>{description}</div>
+          </div>
+        {/if}
+      </div>
+    {/each}
+  </div>
+</section>
 
 
 
