@@ -175,7 +175,7 @@
 <!--    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read more</a>  -->
     
     <a href="https://forms.gle/v4pftv5pUiwYjxwp7" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-green-100 rounded-lg bg-green-50 hover:text-white-900 hover:bg-green-100 dark:text-white-400 dark:bg-green-800 dark:hover:bg-green-700 dark:hover:text-white">
-      <span class="w-full">Googleフォームで投稿する</span>
+      <span class="w-full">{@html $t("reward.btn1")}</span>
       <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
       </svg>
@@ -243,24 +243,24 @@
 
 
 
-<!-- Testimonials Section -->
+<!-- Note Section -->
 <section id="testimonials" class="bg-gray-100 py-20">
   <div class="container mx-auto">
-      <h2 class="text-2xl mb-3">注意事項:</h2>
+      <h2 class="text-2xl mb-3">{@html $t("note.precautions.title")}</h2>
       <!-- Example testimonial; you can add more -->
       <div class="p-4 mb-8 bg-white shadow rounded">
-        <p>・リワードの金額は貢献度によって変動します</p>
-        <p>・同じ内容の場合、運営の判断により抽選になる事があります</p>
-        <p>・招待ボーナスを不正に受け取ろうとした場合は付与されません</p>
-        <p>・招待プレイヤーがゲームを遊んでいない場合は除外されます</p>
+        <p>{@html $t("note.precautions.msg1")}</p>
+        <p>{@html $t("note.precautions.msg2")}</p>
+        <p>{@html $t("note.precautions.msg4")}</p>
+        <p>{@html $t("note.precautions.msg3")}</p>
       </div>
   </div>
   <div class="container mx-auto">
-    <h2 class="text-2xl mb-3">プライバシーポリシー:</h2>
+    <h2 class="text-2xl mb-3">{@html $t("note.policy.title")}</h2>
     <!-- Example testimonial; you can add more -->
     <div class="p-4 mb-8 bg-white shadow rounded">
-        <p>・オープンベータに登録されたアカウントは、イベント終了後に適切に削除されます。</p>
-        <p>・アカウント情報が第三者に渡されることはありません。</p>
+      <p>{@html $t("note.policy.msg1")}</p>
+      <p>{@html $t("note.policy.msg2")}</p>
     </div>
 </div>
 </section>

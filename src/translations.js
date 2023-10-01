@@ -12,6 +12,20 @@ export default {
     "sect1.box3": "Join the game in MULTIPLAY!",
     "reward.title": "Rewards",
     "reward.msg1": "Please submit requests, item ideas, and bug reports. Reward rewards will be given to those who are selected!",
+    "reward.btn1": "Submit with Google Forms",
+
+
+    "note.precautions.title": "precautions:",
+    "note.precautions.msg1": "・Reward amounts vary depending on the level of contribution",
+    "note.precautions.msg2": "・In the case of the same content, a lottery may be held at the discretion of the management",
+    "note.precautions.msg3": "・Invitation bonuses will not be granted in case of fraudulent attempts to receive them",
+    "note.precautions.msg4": "・Invited players are excluded if they are not playing the game",
+    
+    "note.policy.title": "Privacy Policy:",
+    "note.policy.msg1": "・Accounts registered for the open beta will be properly deleted after the event",
+    "note.policy.msg2": "・Account information will not be passed on to third parties",
+
+
   },
   Japanese: {
     "homepage.catchcopy": "みんなで協力してゲームを面白くしよう！",
@@ -26,8 +40,22 @@ export default {
     "sect1.box3": "マルチプレイでゲームに参加！",
     "reward.title": "リワード",
     "reward.msg1": "要望やアイテムのアイデア、バグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！",
+    "reward.btn1": "Googleフォームで投稿する",
     
+
+    "note.precautions.title": "注意事項:",
+    "note.precautions.msg1": "・リワードの金額は貢献度によって変動します",
+    "note.precautions.msg2": "・同じ内容の場合、運営の判断により抽選になる事があります",
+    "note.precautions.msg3": "・招待ボーナスを不正に受け取ろうとした場合は付与されません",
+    "note.precautions.msg4": "・招待プレイヤーがゲームを遊んでいない場合は除外されます",
+    
+    "note.policy.title": "プライバシーポリシー:",
+    "note.policy.msg1": "・オープンベータに登録されたアカウントは、イベント終了後に適切に削除されます",
+    "note.policy.msg2": "・アカウント情報が第三者に渡されることはありません",
+
+
   },
+
   // Chinese: {
   //   "homepage.catchcopy": "みんなで協力してゲームを面白くしよう！",
   //   "homepage.title": "¡Hola Mundo!",
