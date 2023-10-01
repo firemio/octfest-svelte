@@ -138,6 +138,76 @@
     },
   ];
 
+
+  const bugs_en = [
+    {
+      title: 'I want to eliminate the synchronization process on return.',
+      description: 'Switching back and forth between tabs causes a synchronization process when returning, which worsens the playing experience. Synchronization occurs especially after opening Discord or checking the map on the website during a tournament, which is not easy to operate.',
+    },
+    {
+      title: "[Skull's pranks] Backtracking.",
+      description:
+        "If you backtrack and rub against another player, the coordinates will be off.",
+    },
+    {
+      title: 'It goes into auto on its own.',
+      description:
+        'It operates on its own even though it is not shifted to auto mode.',
+    },
+    {
+      title: "[Queen's prank] Bankruptcy",
+      description:
+        'Sometimes properties are not sold when they are in debt.',
+    },
+    {
+      title: 'Display timing of events for each player',
+      description:
+        "I would like the timing of the events that occur for each player (events that give items for city monopoly or more money) to be displayed after It's your turn.",
+    },
+    {
+      title: 'Once an item is used, it cannot be canceled.',
+      description:
+        'stealer, take over',
+    },
+    {
+      title: 'When to ring when a lapsed item is broken.',
+      description:
+        'The timing of breaking items is different. Instead of the item breaking when you use it, it breaks when you reach the square.',
+    },
+    {
+      title: 'The size of the sugomi is not standardized.',
+      description:
+        'Different size in order roulette and financial statement.',
+    },
+    {
+      title: 'routing',
+      description:
+        'There are pathways that are not possessed by skulls, but they are not selected.',
+    },
+    {
+      title: 'Member Registration',
+      description:
+        'If the email authentication is done on a smartphone, the PC side has to reload or step on the link.',
+    },
+    {
+      title: 'JS dialog',
+      description:
+        'When displaying JS dialog, the waiting time can be long.',
+    },
+    {
+      title: 'Overall Map',
+      description:
+        'Cars and heliports are difficult to identify because of the flashing lights.',
+    },
+    {
+      title: 'god of fortune in winter',
+      description:
+        'The timing of the event is difficult to understand because it occurs before the minus square message.',
+    },
+  ];
+
+
+
 </script>
 
 
@@ -207,20 +277,17 @@
 <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300">
 
 
-
 <div class="bg-white py-6 sm:py-8 lg:py-12">
   <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 
-    <!-- text - start -->
     <div class="mb-10 md:mb-16">
-      <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">既知のバグ(2023/10/01)</h2>
+      <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">{@html $t("bugs.head")}(2023/10/01)</h2>
 
       <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"></p>
     </div>
-    <!-- text - end -->
 
     <div class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
-      <!-- feature - start -->
+<!---
       {#each bugs as { title, description }}
       <div class="flex divide-x rounded-lg border bg-gray-50">
         <div class="flex items-center p-2 text-indigo-500 md:p-4">
@@ -235,12 +302,168 @@
         </div>
       </div>
       {/each}
-      <!-- feature - end -->
+-->
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title1")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description1")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title2")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description2")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title3")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description3")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title4")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description4")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title5")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description5")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title6")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description6")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title7")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description7")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title8")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description8")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title9")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description9")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title10")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description10")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title11")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description11")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title12")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description12")}</p>
+  </div>
+</div>
+
+<div class="flex divide-x rounded-lg border bg-gray-50">
+  <div class="flex items-center p-2 text-indigo-500 md:p-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="mb-2 text-lg font-semibold md:text-xl">{@html $t("bugs.title13")}</h3>
+    <p class="text-gray-500">{@html $t("bugs.description13")}</p>
+  </div>
+</div>
+
 
     </div>
   </div>
 </div>
-
 
 
 <!-- Note Section -->
