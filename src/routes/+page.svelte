@@ -12,20 +12,26 @@
   const items = [
     {
       id: 'item-1',
-      title: 'Is it accessible?',
-      description: 'Yes. It adheres to the WAI-ARIA design pattern.',
+      title: 'リワードはどうやって貰えますか？',
+      description: 'アイデアやバグの報告が採用されると貰えます。',
     },
     {
       id: 'item-2',
-      title: 'Is it unstyled?',
+      title: 'リワードはいつ貰えますか？',
       description:
-        "Yes. It's unstyled by default, giving you freedom over the look and feel.",
+        '上場した後に配布されます。',
     },
     {
       id: 'item-3',
-      title: 'Can it be animated?',
+      title: '紹介者ボーナスとは？',
       description:
-        'Yes! You can use the transition prop to configure the animation.',
+        "ゲーム内のプロフィールページに紹介リンクがあります。紹介リンクから入ったユーザーの数に応じてトークンが貰えます。",
+    },
+    {
+      id: 'item-4',
+      title: '紹介者ボーナスはいつ貰えますか？',
+      description:
+        '上場時にエアドロップされます。',
     },
   ];
 
@@ -105,16 +111,16 @@
   <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">参加方法</h2>
   <p class="flex justify-center text-xl mb-5">今回のβテストではウォレット作成の手順が省かれています。</p>
   <div class="container mx-auto grid md:grid-cols-3 gap-12">
-      <div class="bg-blue-600 rounded pt-2">
+      <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 1</h2>
           <p class="mb-4 flex justify-center text-white">会員登録する</p>
           <p class="mb-4 flex justify-center text-white"><a href="https://beta-diceordead.six502.com/" target="game">https://beta-diceordead.six502.com/</a></p>
       </div>
-      <div class="bg-blue-600 rounded pt-2">
+      <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 2</h2>
           <p class="mb-4 flex justify-center text-white">メールとSMSを認証する</p>
       </div>
-      <div class="bg-blue-600 rounded pt-2">
+      <div class="bg-blue-600 rounded pt-2 m-3">
           <h2 class="text-xl mb-4 flex justify-center text-white">Step 3</h2>
           <p class="mb-4 flex justify-center text-white">マルチプレイでゲームに参加！</p>
       </div>
@@ -124,10 +130,24 @@
 </section>
 
 
-<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300">
 
-<!-- Features Section -->
-<section id="features" class="py-20">
+<!-- Reward Section -->
+<section id="features" class="py-20 flex flex-col items-center">
+    <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">リワード</h2>    
+    <p class="flex justify-center text-xl mb-5">要望やアイテムのアイデア、バグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！</p>
+
+<!--    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read more</a>  -->
+    
+    <a href="https://forms.gle/v4pftv5pUiwYjxwp7" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-green-100 rounded-lg bg-green-50 hover:text-white-900 hover:bg-green-100 dark:text-white-400 dark:bg-green-800 dark:hover:bg-green-700 dark:hover:text-white">
+      <span class="w-full">Googleフォームで投稿する</span>
+      <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a> 
+
+  
+  
   <div class="root" use:melt={$root}>
     {#each items as { id, title, description }}
       <div use:melt={$item(id)} class="item">
@@ -148,14 +168,18 @@
 
 
 
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300">
+
+
 
 <div class="bg-white py-6 sm:py-8 lg:py-12">
   <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
       <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">既知のバグ(2023/10/01)</h2>
 
-      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">要望やバグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！</p>
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"></p>
     </div>
     <!-- text - end -->
 
@@ -183,6 +207,27 @@
 
 
 
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-gray-100 py-20">
+  <div class="container mx-auto">
+      <h2 class="text-2xl mb-3">注意事項:</h2>
+      <!-- Example testimonial; you can add more -->
+      <div class="p-4 mb-8 bg-white shadow rounded">
+        <p>・リワードの金額は貢献度によって変動します</p>
+        <p>・同じ内容の場合、運営の判断により抽選になる事があります</p>
+        <p>・招待ボーナスを不正に受け取ろうとした場合は付与されません</p>
+        <p>・招待プレイヤーがゲームを遊んでいない場合は除外されます</p>
+      </div>
+  </div>
+  <div class="container mx-auto">
+    <h2 class="text-2xl mb-3">プライバシーポリシー:</h2>
+    <!-- Example testimonial; you can add more -->
+    <div class="p-4 mb-8 bg-white shadow rounded">
+        <p>・オープンベータに登録されたアカウントは、イベント終了後に適切に削除されます。</p>
+        <p>・アカウント情報が第三者に渡されることはありません。</p>
+    </div>
+</div>
+</section>
 
 
 
