@@ -14,6 +14,17 @@ export default {
     "reward.msg1": "Please submit requests, item ideas, and bugs reports. Reward rewards will be given to those who are selected!",
     "reward.btn1": "Submit with Google Forms",
 
+    "faq.q1": 'How do I get rewards?',
+    "faq.a1": 'You will get it when your idea or bug report is adopted.',
+    "faq.q2": 'When will I receive my reward?',
+    "faq.a2": 'It will be distributed after listing.',
+    "faq.q3": 'What is a referral bonus?',
+    "faq.a3": "There is a referral link on your profile page in the game. You will receive tokens depending on the number of users who enter through the referral link.",
+    "faq.q4": 'When will I receive my referral bonus?',
+    "faq.a4": 'It will be airdropped at the time of listing.',
+    "faq.q5": 'In what currency can I get it?',
+    "faq.a5": 'SIX502 token. The price at the time of listing will be $0.1 equivalent.',
+
 
 
     "bugs.head": "Known Bugs",
@@ -86,6 +97,19 @@ export default {
     "reward.title": "リワード",
     "reward.msg1": "要望やアイテムのアイデア、バグの報告をお願い致します。採用された方にはリワード報酬をプレゼント！",
     "reward.btn1": "Googleフォームで投稿する",
+
+
+    "faq.q1": 'リワードはどうやって貰えますか？',
+    "faq.a1": 'アイデアやバグの報告が採用されると貰えます。',
+    "faq.q2": 'リワードはいつ貰えますか？',
+    "faq.a2":'上場した後に配布されます。',
+    "faq.q3": '紹介者ボーナスとは？',
+    "faq.a3":"ゲーム内のプロフィールページに紹介リンクがあります。紹介リンクから入ったユーザーの数に応じてトークンが貰えます。",
+    "faq.q4": '紹介者ボーナスはいつ貰えますか？',
+    "faq.a4":'上場時にエアドロップされます。',
+    "faq.q5": '何の通貨で貰えますか？',
+    "faq.a5": 'SIX502トークンです。上場時の価格$0.1換算となります。',
+
 
     
     "bugs.head": "既知のバグ",

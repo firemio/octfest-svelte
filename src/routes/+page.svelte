@@ -244,7 +244,7 @@
     <p class="flex justify-center text-xl mb-5">{@html $t("reward.msg1")}</p>
 <!--    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read more</a>  -->
     
-    <a href="https://forms.gle/v4pftv5pUiwYjxwp7" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-green-100 rounded-lg bg-green-50 hover:text-white-900 hover:bg-green-100 dark:text-white-400 dark:bg-green-800 dark:hover:bg-green-700 dark:hover:text-white">
+    <a href="https://forms.gle/v4pftv5pUiwYjxwp7" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-white-100 rounded-lg bg-green-500 hover:text-white-900 hover:bg-green-300 text-white-400 dark:bg-green-500 dark:hover:bg-green-700 dark:hover:text-white">
       <span class="w-full">{@html $t("reward.btn1")}</span>
       <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -252,7 +252,7 @@
     </a> 
 
   
-  
+  <!---
   <div class="root" use:melt={$root}>
 
     {#each items as { id, title, description }}
@@ -270,6 +270,82 @@
       </div>
     {/each}
   </div>
+-->
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+    <div class="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
+      <!-- question - start -->
+      <div class="relative rounded-lg bg-gray-100 p-5 pt-8">
+        <span class="absolute -top-4 left-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </span>
+
+        <h3 class="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">{@html $t("faq.q1")}</h3>
+        <p class="text-gray-500">{@html $t("faq.a1")}</p>
+      </div>
+      <!-- question - end -->
+
+      <!-- question - start -->
+      <div class="relative rounded-lg bg-gray-100 p-5 pt-8">
+        <span class="absolute -top-4 left-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </span>
+
+        <h3 class="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">{@html $t("faq.q2")}</h3>
+        <p class="text-gray-500">{@html $t("faq.a2")}</p>
+      </div>
+      <!-- question - end -->
+
+      <!-- question - start -->
+      <div class="relative rounded-lg bg-gray-100 p-5 pt-8">
+        <span class="absolute -top-4 left-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </span>
+
+        <h3 class="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">{@html $t("faq.q3")}</h3>
+        <p class="text-gray-500">{@html $t("faq.a3")}</p>
+      </div>
+      <!-- question - end -->
+
+      <!-- question - start -->
+      <div class="relative rounded-lg bg-gray-100 p-5 pt-8">
+        <span class="absolute -top-4 left-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </span>
+
+        <h3 class="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">{@html $t("faq.q4")}</h3>
+        <p class="text-gray-500">{@html $t("faq.a4")}</p>
+      </div>
+      <!-- question - end -->
+
+      <!-- question - start -->
+      <div class="relative rounded-lg bg-gray-100 p-5 pt-8">
+        <span class="absolute -top-4 left-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </span>
+
+        <h3 class="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">{@html $t("faq.q5")}</h3>
+        <p class="text-gray-500">{@html $t("faq.a5")}</p>
+      </div>
+      <!-- question - end -->
+
+	</div>
+</div>
+
+
+
 </section>
 
 
